@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  * {
+    @apply focus:outline-none focus:border-yellow-600 focus:ring-1 focus:ring-yellow-600;
+  }
+
+  body {
+    font-family: "Philosopher", sans-serif;
+    @apply bg-neutral-100 dark:bg-neutral-900;
+  }
+}
+
+@layer components {
+  .button {
+    @apply transition-all duration-500 border-dotted border border-neutral-900 dark:border-neutral-100 text-neutral-900 dark:text-neutral-100 hover:border-yellow-600 hover:text-yellow-600 p-2 cursor-pointer;
+  }
+
+  .input {
+    @apply transition-all duration-500 bg-transparent border-dotted border border-neutral-900 dark:border-neutral-100 placeholder:text-neutral-900 dark:placeholder:text-neutral-100 text-neutral-900 dark:text-neutral-100 hover:border-yellow-600 rounded-none p-2;
+  }
+
+  .text-primary {
+    @apply font-bold text-neutral-900 dark:text-neutral-100;
+  }
+
+  .text-secondary {
+    @apply text-neutral-600 dark:text-neutral-400;
+  }
+}
