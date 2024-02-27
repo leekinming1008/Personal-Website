@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import Skills from '../components/Skills';
 import Projects from '../components/Projects';
 import Contact from '../components/Contact';
+import Experiences from '../components/Experiences';
 
 function Index() {
   const sectionsRef = useRef([]);
@@ -42,7 +43,7 @@ function Index() {
           <span aria-hidden="true">&#x2023;</span>
           Experience
         </h1>
-        <Contact />
+        <Experiences />
       </section>
       <section ref={addSectionRef}>
         <h1 className="text-primary my-4 text-xl">

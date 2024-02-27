@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import TechnologiesUsed from './TechnologiesUsed';
 
-function Project({ title, desc, viewCode, livePreview, imgSrc }) {
+function Project({ title, desc, viewCode, livePreview, imgSrc, technolgiesUsed }) {
   return (
     <div className="flex w-full flex-col gap-4 md:flex-row">
       <img
@@ -15,6 +16,9 @@ function Project({ title, desc, viewCode, livePreview, imgSrc }) {
           <h2 className="text-primary">{title}</h2>
           <p className="text-secondary hyphens-auto">{desc}</p>
         </div>
+        <TechnologiesUsed 
+          TechnologiesUsed = {technolgiesUsed}
+        />
         <div className="flex items-center justify-between">
           <a className="button" href={viewCode} target="_blank">
             View code
@@ -34,6 +38,7 @@ Project.propTypes = {
   viewCode: PropTypes.string.isRequired,
   livePreview: PropTypes.string.isRequired,
   imgSrc: PropTypes.string.isRequired,
+  technolgiesUsed: PropTypes.object.isRequired,
 };
 
 export default Project;
