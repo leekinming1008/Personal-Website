@@ -21,13 +21,6 @@ function Projects() {
         imgSrc={personalWebsite}
         technolgiesUsed = {["React", "HTML", "CSS"]}
       />
-      <Project
-        title="Onine Web Scrapper"
-        desc="This is the web scrapper for special search engine to crap the search items price."
-        viewCode="https://github.com/leekinming1008/Online-Web-Scraper"
-        imgSrc={webScrapper}
-        technolgiesUsed = {["Java", "JavaFx"]}
-      />
     </div>
   );
 }
