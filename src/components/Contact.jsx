@@ -12,7 +12,7 @@ function Contact() {
       <div className="flex gap-2">
         <a
           className="group"
-          href="https://www.linkedin.com/in/kin-ming-lee-340862172"
+          href="https://www.linkedin.com/in/leekinming"
           target="_blank"
           aria-label="LinkedIn"
         >
