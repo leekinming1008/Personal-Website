@@ -1,31 +1,11 @@
 import React, { useState } from 'react';
-import axios from 'axios';
 import { useMessage } from '../contexts/MessageContext';
 import GithubIcon from './icons/Github';
 import LinkedinIcon from './icons/Linkedin';
-import { API_URL } from '../constants';
 
 function Contact() {
   const { setMessage } = useMessage();
   const [inputs, setInputs] = useState({ name: '', email: '', message: '' });
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    axios
-      .post(`${API_URL}/email`, inputs)
-      .then((res) => {
-        if (res.status >= 400) {
-          throw new Error('Server Error.');
-        }
-
-        setMessage({ error: false, text: 'Message sent successfully!' });
-        setInputs({ name: '', email: '', message: '' });
-      })
-      .catch(() => {
-        setMessage({ error: true, text: 'Opps! Something went wrong.' });
-      });
-  };
 
   return (
     <div className="m-auto w-full p-4">
@@ -47,7 +27,8 @@ function Contact() {
           <GithubIcon className="transform-all fill-neutral-900 duration-500 group-hover:fill-yellow-600 dark:fill-neutral-100" />
         </a>
       </div>
-      <form className="my-4 flex flex-col gap-4" onSubmit={handleSubmit}>
+      <form className="my-4 flex flex-col gap-4" action="mailto:kinmingleeangus@gmail.com" method="post" enctype="text/plain">
+ 
         <label className="sr-only" htmlFor="name">
           Name
         </label>

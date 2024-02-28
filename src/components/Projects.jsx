@@ -11,7 +11,6 @@ function Projects() {
         title="Webbase Desktop"
         desc="This is a web application to similate the personal desktop which provide different applications."
         viewCode="https://github.com/leekinming1008/webbase_desktop"
-        livePreview=""
         imgSrc={webbaseDesktop}
         technolgiesUsed = {["Javascript", "HTML", "CSS", "Node.js"]}
       />
@@ -19,7 +18,6 @@ function Projects() {
         title="Personal Website"
         desc="This is my personal web profile build by React."
         viewCode="https://github.com/leekinming1008/Personal-Website"
-        livePreview=""
         imgSrc={personalWebsite}
         technolgiesUsed = {["React", "HTML", "CSS"]}
       />
@@ -27,7 +25,6 @@ function Projects() {
         title="Onine Web Scrapper"
         desc="This is the web scrapper for special search engine to crap the search items price."
         viewCode="https://github.com/leekinming1008/Online-Web-Scraper"
-        livePreview=""
         imgSrc={webScrapper}
         technolgiesUsed = {["Java", "JavaFx"]}
       />

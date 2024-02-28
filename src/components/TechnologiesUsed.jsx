@@ -2,12 +2,16 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import TechnologyUsed from './TechnologyUsed';
 
-function TechnologiesUsed({TechnologiesUsed}) {
+function TechnologiesUsed({technolgiesUsed}) {
   return (
     <ul class="mt-2 flex flex-wrap" aria-label="Technologies used">
-        {TechnologiesUsed.map((techused) => <TechnologyUsed TechnologyUsed = {techused}/>)}
+        {technolgiesUsed.map((techused) => <TechnologyUsed technologyUsed = {techused}/>)}
     </ul>    
   );
 }
+
+TechnologiesUsed.propTypes = {
+    technolgiesUsed: PropTypes.object.isRequired,
+};
 
 export default TechnologiesUsed;

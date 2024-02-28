@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import TechnologiesUsed from './TechnologiesUsed';
 
-function Project({ title, desc, viewCode, livePreview, imgSrc, technolgiesUsed }) {
+function Project({ title, desc, viewCode, imgSrc, technolgiesUsed }) {
   return (
     <div className="flex w-full flex-col gap-4 md:flex-row">
       <img
@@ -17,14 +17,11 @@ function Project({ title, desc, viewCode, livePreview, imgSrc, technolgiesUsed }
           <p className="text-secondary hyphens-auto">{desc}</p>
         </div>
         <TechnologiesUsed 
-          TechnologiesUsed = {technolgiesUsed}
+          technolgiesUsed = {technolgiesUsed}
         />
         <div className="flex items-center justify-between">
           <a className="button" href={viewCode} target="_blank">
             View code
-          </a>
-          <a className="button" href={livePreview} target="_blank">
-            Live preview
           </a>
         </div>
       </div>

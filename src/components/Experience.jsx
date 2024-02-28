@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types'
 
 function Experience({title, companyName, period, description}) {
   return (
@@ -12,5 +13,12 @@ function Experience({title, companyName, period, description}) {
     </div>    
   );
 }
+
+Experience.PropTypes = {
+  title: PropTypes.string.isRequired,
+  companyName: PropTypes.string.isRequired,
+  period: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+};
 
 export default Experience;
