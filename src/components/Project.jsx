@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import TechnologiesUsed from './TechnologiesUsed';
 
-function Project({ title, desc, viewCode, imgSrc, technolgiesUsed }) {
+function Project({ title, desc, viewCode, imgSrc, technolgiesUsed, livePreview }) {
   return (
     <div className="flex w-full flex-col gap-4 md:flex-row">
       <img
@@ -23,7 +23,11 @@ function Project({ title, desc, viewCode, imgSrc, technolgiesUsed }) {
           <a className="button" href={viewCode} target="_blank">
             View code
           </a>
-        </div>
+          {livePreview.length > 0 &&
+          <a className="button" href={livePreview} target="_blank">
+            Live Preview
+          </a>}
+          </div>
       </div>
     </div>
   );

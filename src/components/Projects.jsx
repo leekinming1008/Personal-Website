@@ -13,6 +13,7 @@ function Projects() {
         viewCode="https://github.com/leekinming1008/webbase_desktop"
         imgSrc={webbaseDesktop}
         technolgiesUsed = {["Javascript", "HTML", "CSS", "Node.js"]}
+        livePreview = "https://personaldesktop.netlify.app/"
       />
       <Project
         title="Personal Website"
@@ -20,6 +21,7 @@ function Projects() {
         viewCode="https://github.com/leekinming1008/Personal-Website"
         imgSrc={personalWebsite}
         technolgiesUsed = {["React", "HTML", "CSS"]}
+        livePreview = ""
       />
     </div>
   );
