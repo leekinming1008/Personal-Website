@@ -1,8 +1,8 @@
 import React from 'react';
 import Project from './Project';
 import personalWebsite from '../assets/personal_website.png';
-import webScrapper from '../assets/webScrapper.png'
-import webbaseDesktop from '../assets/Webbase_Desktop.png'
+import productManagement from '../assets/productManagement.png';
+import webbaseDesktop from '../assets/Webbase_Desktop.png';
 
 function Projects() {
   return (
@@ -22,6 +22,14 @@ function Projects() {
         imgSrc={personalWebsite}
         technolgiesUsed = {["React", "HTML", "CSS"]}
         livePreview = ""
+      />
+      <Project
+        title="Product Management System"
+        desc="This is the full stack project with frontend signal webpage application write in React and backend with MongoDB and Express.js."
+        viewCode="https://github.com/leekinming1008/react-product-management-system"
+        imgSrc={productManagement}
+        technolgiesUsed = {["React", "HTML", "CSS", "MongoDB", "Express.JS"]}
+        livePreview = "https://angusproductmanagement.netlify.app/"
       />
     </div>
   );
