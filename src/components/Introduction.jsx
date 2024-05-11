@@ -19,7 +19,7 @@ function Introduction() {
         className="text-primary text-4xl text-yellow-600 opacity-0 transition-opacity duration-1000"
         ref={(e) => elementsRef.current.push(e)}
       >
-        Lee Kin Ming Angus
+        Angus Lee
       </span>
       <span
         className="text-secondary text-lg opacity-0 transition-opacity delay-700 duration-1000"
